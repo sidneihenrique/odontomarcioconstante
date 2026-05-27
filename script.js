@@ -1,7 +1,7 @@
 // ========================
 // TEMA: altere para 'light' ou 'dark'
 // ========================
-const THEME = 'dark';
+const THEME = 'light';
 document.documentElement.setAttribute('data-theme', THEME);
 
 const logoImg = document.querySelector('.logo img');
