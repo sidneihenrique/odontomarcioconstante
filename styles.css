@@ -1019,6 +1019,90 @@ header.scrolled {
 }
 
 /* ========================
+   LOCALIZAÇÃO
+   ======================== */
+.location {
+    padding: 80px 24px;
+    background-color: var(--dark);
+}
+
+.location-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.location-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-info .section-tag {
+    margin-bottom: 8px;
+}
+
+.location-info h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.location-info > p {
+    font-size: 14px;
+    color: var(--light);
+    opacity: 0.78;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.location-info > p strong {
+    color: var(--blue);
+    opacity: 1;
+}
+
+.location-details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.location-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: var(--light);
+    opacity: 0.85;
+    line-height: 1.65;
+}
+
+.location-details li ion-icon {
+    color: var(--blue);
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.location-map {
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 300px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.location-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: 0;
+}
+
+/* ========================
    CTA FINAL
    ======================== */
 .cta-final {
@@ -1306,6 +1390,26 @@ footer {
         gap: 48px;
     }
 
+    .location-content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 48px;
+    }
+
+    .location-info {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .location-map {
+        flex: 1;
+        min-height: 400px;
+    }
+
+    .location-map iframe {
+        min-height: 400px;
+    }
+
     .footer-bottom {
         flex-direction: row;
         justify-content: space-between;
@@ -1457,6 +1561,22 @@ footer {
         padding: 112px 64px;
     }
 
+    .location {
+        padding: 112px 64px;
+    }
+
+    .location-info h2 {
+        font-size: 34px;
+    }
+
+    .location-map {
+        min-height: 480px;
+    }
+
+    .location-map iframe {
+        min-height: 480px;
+    }
+
     .cta-final {
         padding: 112px 64px;
     }
@@ -1508,6 +1628,7 @@ footer {
 .services,
 .differentials,
 .gallery,
+.location,
 .faq,
 .cta-final {
     --background: #F0F0F0;
@@ -1559,6 +1680,7 @@ footer {
 .services .btn-outline,
 .differentials .btn-outline,
 .gallery .btn-outline,
+.location .btn-outline,
 .faq .btn-outline,
 .cta-final .btn-outline {
     border-color: rgba(0, 0, 0, 0.2);
@@ -1569,6 +1691,7 @@ footer {
 .services .btn-outline:hover,
 .differentials .btn-outline:hover,
 .gallery .btn-outline:hover,
+.location .btn-outline:hover,
 .faq .btn-outline:hover,
 .cta-final .btn-outline:hover {
     border-color: var(--blue);
