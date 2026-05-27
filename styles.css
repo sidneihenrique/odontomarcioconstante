@@ -9,8 +9,8 @@
     --light-gray: #3A3A3A;
     --dark-gray: #272727;
 
-    --blue: #383dc1;
-    --blue-light: #191ba6;
+    --blue: #6dceff;
+    --blue-light: #a7e2ff;
     --blue-dim: rgba(74, 159, 219, 0.1);
     --blue-border: rgba(74, 159, 219, 0.25);
 }
@@ -269,7 +269,17 @@ header.scrolled {
     flex-direction: column;
     gap: 14px;
     margin-bottom: 40px;
-    align-items: flex-end;
+    align-items: center;
+}
+
+.hero-actions .btn-primary {
+    border: 2px solid #25D366;
+    background: none;
+    color: #25D366;
+}
+
+.hero-actions .btn-primary ion-icon {
+    color: #25D366;
 }
 
 .btn-primary {
@@ -292,6 +302,11 @@ header.scrolled {
     background-color: #1ebe57;
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+    color: var(--white);
+}
+
+.btn-primary:hover ion-icon {
+    color: var(--white);
 }
 
 .btn-primary ion-icon {
