@@ -1,15 +1,4 @@
 // ========================
-// TEMA: altere para 'light' ou 'dark'
-// ========================
-const THEME = 'light';
-document.documentElement.setAttribute('data-theme', THEME);
-
-const logoImg = document.querySelector('.logo img');
-if (logoImg) {
-    logoImg.src = THEME === 'light' ? './assets/logo_2.svg' : './assets/logo.svg';
-}
-
-// ========================
 // MOBILE MENU
 // ========================
 const menuToggle = document.getElementById('menuToggle');
